@@ -1,0 +1,23 @@
+platform :ios, '9.0'
+
+target 'instagram' do
+  use_frameworks!
+
+  pod 'Alamofire'
+  pod 'SDWebImage'
+  pod 'SwiftyJSON'
+  pod 'SVProgressHUD'
+
+  # Pods for instagram
+
+  target 'instagramTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'instagramUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
